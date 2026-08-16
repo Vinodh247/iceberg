@@ -1,0 +1,160 @@
+# Documentation Link Report
+
+Found 151 broken or questionable links:
+
+- **docs/docs/flink-queries.md**: `flink-configuration.md#read-options`
+- **docs/docs/flink-queries.md**: `../../javadoc/{{ icebergVersion }}/org/apache/iceberg/flink/source/FlinkSource.html`
+- **docs/docs/flink-queries.md**: `../../javadoc/{{ icebergVersion }}/org/apache/iceberg/flink/source/IcebergSource.html`
+- **docs/docs/flink-queries.md**: `configuration.md#write-properties`
+- **docs/docs/flink-queries.md**: `flink-configuration.md#read-options`
+- **docs/docs/flink-queries.md**: `../../spec.md#manifest-lists`
+- **docs/docs/flink-queries.md**: `../../spec.md#manifest-lists`
+- **docs/docs/hive.md**: `../../spec.md#sort-orders`
+- **docs/docs/hive.md**: `../../javadoc/{{ icebergVersion }}/index.html?org/apache/iceberg/catalog/Catalog.html`
+- **docs/docs/hive.md**: `../../javadoc/{{ icebergVersion }}/index.html?org/apache/iceberg/Tables.html`
+- **docs/docs/spark-writes.md**: `spark-configuration.md#sql-extensions`
+- **docs/docs/spark-writes.md**: `spark-ddl.md#branching-and-tagging-ddl`
+- **docs/docs/spark-writes.md**: `spark-configuration.md#write-options`
+- **docs/docs/spark-writes.md**: `configuration.md#write-properties`
+- **docs/docs/flink-actions.md**: `maintenance.md#compact-data-files`
+- **docs/docs/flink-actions.md**: `../../javadoc/{{ icebergVersion }}/org/apache/iceberg/flink/actions/RewriteDataFilesAction.html`
+- **docs/docs/spark-ddl.md**: `spark-getting-started.md#spark-type-to-iceberg-type`
+- **docs/docs/spark-ddl.md**: `spark-configuration.md#catalog-configuration`
+- **docs/docs/spark-ddl.md**: `spark-configuration.md#replacing-the-session-catalog`
+- **docs/docs/spark-ddl.md**: `spark-configuration.md#catalog-configuration`
+- **docs/docs/spark-ddl.md**: `spark-configuration.md#replacing-the-session-catalog`
+- **docs/docs/spark-ddl.md**: `spark-configuration.md#sql-extensions`
+- **docs/docs/spark-ddl.md**: `spark-configuration.md#sql-extensions`
+- **docs/docs/spark-ddl.md**: `../../view-spec.md`
+- **docs/docs/schemas.md**: `evolution.md#correctness`
+- **docs/docs/evolution.md**: `spark-ddl.md#alter-table-add-partition-field`
+- **docs/docs/evolution.md**: `spark-ddl.md#alter-table-write-ordered-by`
+- **docs/docs/spark-getting-started.md**: `../../releases.md`
+- **docs/docs/spark-getting-started.md**: `../../multi-engine-support.md`
+- **docs/docs/spark-getting-started.md**: `spark-configuration.md#catalogs`
+- **docs/docs/spark-getting-started.md**: `spark-ddl.md#create-table`
+- **docs/docs/spark-getting-started.md**: `spark-ddl.md#create-table`
+- **docs/docs/spark-getting-started.md**: `spark-ddl.md#create-table-as-select`
+- **docs/docs/spark-getting-started.md**: `spark-ddl.md#alter-table`
+- **docs/docs/spark-getting-started.md**: `spark-ddl.md#drop-table`
+- **docs/docs/spark-getting-started.md**: `spark-writes.md#insert-into`
+- **docs/docs/spark-getting-started.md**: `spark-writes.md#merge-into`
+- **docs/docs/spark-getting-started.md**: `spark-writes.md#delete-from`
+- **docs/docs/spark-getting-started.md**: `spark-writes.md#writing-with-dataframes`
+- **docs/docs/spark-getting-started.md**: `spark-queries.md#inspecting-tables`
+- **docs/docs/spark-getting-started.md**: `spark-queries.md#querying-with-dataframes`
+- **docs/docs/configuration.md**: `spark-writes.md#writing-distribution-modes`
+- **docs/docs/configuration.md**: `../../spec.md#format-versioning`
+- **docs/docs/configuration.md**: `spark-configuration.md#catalog-configuration`
+- **docs/docs/configuration.md**: `flink.md#adding-catalogs`
+- **docs/docs/configuration.md**: `aws.md#dynamodb-lock-manager`
+- **docs/docs/index.md**: `evolution.md#schema-evolution`
+- **docs/docs/index.md**: `evolution.md#correctness`
+- **docs/docs/index.md**: `evolution.md#partition-evolution`
+- **docs/docs/index.md**: `spark-queries.md#time-travel`
+- **docs/docs/index.md**: `performance.md#scan-planning`
+- **docs/docs/index.md**: `performance.md#data-filtering`
+- **docs/docs/index.md**: `reliability.md#concurrent-write-operations`
+- **docs/docs/index.md**: `../../spec.md`
+- **docs/docs/index.md**: `../../community.md`
+- **docs/docs/flink-writes.md**: `flink-ddl.md/#primary-key`
+- **docs/docs/flink-writes.md**: `../../spec.md#identifier-field-ids`
+- **docs/docs/flink-writes.md**: `flink-configuration.md#write-options`
+- **docs/docs/flink-writes.md**: `flink-configuration.md#write-options`
+- **docs/docs/flink-writes.md**: `flink-configuration.md#write-options`
+- **docs/docs/flink-writes.md**: `maintenance.md#expire-snapshots`
+- **docs/docs/flink-writes.md**: `maintenance.md#delete-orphan-files`
+- **docs/docs/nessie.md**: `spark-configuration.md#catalog-configuration`
+- **docs/docs/nessie.md**: `flink.md#custom-catalog`
+- **docs/docs/nessie.md**: `flink.md#preparation-when-using-flinks-python-api`
+- **docs/docs/partitioning.md**: `../../spec.md#partition-transforms`
+- **docs/docs/partitioning.md**: `evolution.md#partition-evolution`
+- **docs/docs/spark-procedures.md**: `spark-configuration.md#sql-extensions`
+- **docs/docs/spark-procedures.md**: `configuration.md#table-behavior-properties`
+- **docs/docs/spark-procedures.md**: `configuration.md#write-properties`
+- **docs/docs/spark-procedures.md**: `configuration.md#write-properties`
+- **docs/docs/spark-procedures.md**: `../../puffin-spec.md#apache-datasketches-theta-v1-blob-type`
+- **docs/docs/table-migration.md**: `spark-ddl.md#create-table-as-select`
+- **docs/docs/table-migration.md**: `spark-writes.md#insert-into`
+- **docs/docs/flink.md**: `../../multi-engine-support.md#apache-flink`
+- **docs/docs/flink.md**: `flink-ddl.md#create-catalog`
+- **docs/docs/flink.md**: `flink-ddl.md#create-database`
+- **docs/docs/flink.md**: `flink-ddl.md#create-table`
+- **docs/docs/flink.md**: `flink-ddl.md#create-table-like`
+- **docs/docs/flink.md**: `flink-ddl.md#alter-table`
+- **docs/docs/flink.md**: `flink-ddl.md#drop-table`
+- **docs/docs/flink.md**: `flink-queries.md#reading-with-sql`
+- **docs/docs/flink.md**: `flink-writes.md#insert-into`
+- **docs/docs/flink.md**: `flink-writes.md#insert-overwrite`
+- **docs/docs/flink.md**: `flink-queries.md#reading-with-datastream`
+- **docs/docs/flink.md**: `flink-writes.md#appending-data`
+- **docs/docs/flink.md**: `flink-writes.md#overwrite-data`
+- **docs/docs/flink.md**: `flink-queries.md#inspecting-tables`
+- **docs/docs/flink.md**: `flink-actions.md#rewrite-files-action`
+- **docs/docs/custom-catalog.md**: `configuration.md#catalog-properties`
+- **docs/docs/custom-catalog.md**: `configuration.md#catalog-properties`
+- **docs/docs/delta-lake-migration.md**: `../../javadoc/latest/org/apache/iceberg/delta/DeltaLakeToIcebergMigrationActionsProvider.html#snapshotDeltaLakeTable(java.lang.String`
+- **docs/docs/delta-lake-migration.md**: `../../javadoc/latest/org/apache/iceberg/delta/SnapshotDeltaLakeTable.html#as(org.apache.iceberg.catalog.TableIdentifier`
+- **docs/docs/delta-lake-migration.md**: `../../javadoc/latest/org/apache/iceberg/delta/SnapshotDeltaLakeTable.html#icebergCatalog(org.apache.iceberg.catalog.Catalog`
+- **docs/docs/delta-lake-migration.md**: `../../javadoc/latest/org/apache/iceberg/delta/SnapshotDeltaLakeTable.html#deltaLakeConfiguration(org.apache.hadoop.conf.Configuration`
+- **docs/docs/delta-lake-migration.md**: `../../javadoc/latest/org/apache/iceberg/delta/SnapshotDeltaLakeTable.html`
+- **docs/docs/branching.md**: `spark-procedures.md#expire-snapshots`
+- **docs/docs/branching.md**: `../../spec.md#snapshot-retention-policy`
+- **docs/docs/branching.md**: `java-api-quickstart.md#branching-and-tagging`
+- **docs/docs/branching.md**: `spark-ddl.md#branching-and-tagging-ddl`
+- **docs/docs/branching.md**: `spark-queries.md#time-travel`
+- **docs/docs/branching.md**: `spark-writes.md#writing-to-branches`
+- **docs/docs/branching.md**: `flink-queries.md#reading-branches-and-tags-with-SQL`
+- **docs/docs/branching.md**: `flink-writes.md#branch-writes`
+- **docs/docs/aws.md**: `spark-configuration.md#loading-a-custom-catalog`
+- **docs/docs/aws.md**: `flink.md#creating-catalogs-and-using-catalogs`
+- **docs/docs/aws.md**: `custom-catalog.md#custom-file-io-implementation`
+- **docs/docs/aws.md**: `jdbc.md#jdbc-catalog`
+- **docs/docs/aws.md**: `configuration.md#lock-catalog-properties`
+- **docs/docs/aws.md**: `custom-catalog.md#custom-location-provider-implementation`
+- **docs/docs/aws.md**: `../../blogs.md`
+- **docs/docs/api.md**: `../../javadoc/{{ icebergVersion }}/index.html?org/apache/iceberg/Table.html`
+- **docs/docs/api.md**: `../../javadoc/{{ icebergVersion }}/index.html?org/apache/iceberg/PendingUpdate.html`
+- **docs/docs/api.md**: `../../javadoc/{{ icebergVersion }}/index.html?org/apache/iceberg/types/package-summary.html`
+- **docs/docs/api.md**: `evolution.md#correctness`
+- **docs/docs/api.md**: `../../javadoc/{{ icebergVersion }}/index.html?org/apache/iceberg/expressions/Expressions.html`
+- **docs/docs/flink-connector.md**: `flink.md#adding-catalogs`
+- **docs/docs/spark-structured-streaming.md**: `spark-ddl.md#create-table`
+- **docs/docs/spark-structured-streaming.md**: `spark-writes.md#writing-distribution-modes`
+- **docs/docs/spark-structured-streaming.md**: `maintenance.md#expire-snapshots`
+- **docs/docs/spark-structured-streaming.md**: `spark-procedures.md#expire_snapshots`
+- **docs/docs/spark-structured-streaming.md**: `maintenance.md#compact-data-files`
+- **docs/docs/spark-structured-streaming.md**: `spark-procedures.md#rewrite_data_files`
+- **docs/docs/spark-structured-streaming.md**: `maintenance.md#rewrite-manifests`
+- **docs/docs/spark-structured-streaming.md**: `spark-procedures.md#rewrite_manifests`
+- **docs/docs/spark-queries.md**: `spark-configuration.md#using-catalogs`
+- **docs/docs/spark-queries.md**: `../../spec.md#manifest-lists`
+- **docs/docs/spark-queries.md**: `../../spec.md#manifest-lists`
+- **docs/docs/flink-ddl.md**: `flink-writes.md/#upsert`
+- **docs/docs/spark-configuration.md**: `configuration.md#catalog-properties`
+- **docs/docs/spark-configuration.md**: `api.md#table-metadata`
+- **docs/docs/spark-configuration.md**: `spark-queries.md#snapshots`
+- **docs/docs/spark-configuration.md**: `spark-writes.md#writing-distribution-modes`
+- **docs/docs/maintenance.md**: `java-api-quickstart.md#create-a-table`
+- **docs/docs/maintenance.md**: `../../javadoc/{{ icebergVersion }}/org/apache/iceberg/Table.html#expireSnapshots--`
+- **docs/docs/maintenance.md**: `../../javadoc/{{ icebergVersion }}/org/apache/iceberg/ExpireSnapshots.html`
+- **docs/docs/maintenance.md**: `configuration.md#write-properties`
+- **docs/docs/maintenance.md**: `../../javadoc/{{ icebergVersion }}/org/apache/iceberg/actions/DeleteOrphanFiles.html`
+- **docs/docs/maintenance.md**: `../../javadoc/{{ icebergVersion }}/org/apache/iceberg/actions/RewriteDataFiles.html`
+- **docs/docs/maintenance.md**: `../../javadoc/{{ icebergVersion }}/org/apache/iceberg/actions/RewriteManifests.html`
+- **docs/docs/reliability.md**: `../../terms.md#snapshot`
+- **docs/docs/metrics-reporting.md**: `configuration.md#catalog-properties`
+- **docs/docs/hive-migration.md**: `../../releases.md#downloads`
+- **docs/docs/hive-migration.md**: `spark-procedures.md#snapshot`
+- **docs/docs/hive-migration.md**: `spark-procedures.md#migrate`
+- **docs/docs/hive-migration.md**: `spark-procedures.md#add_files`
+- **docs/docs/java-api-quickstart.md**: `../../javadoc/{{ icebergVersion }}/index.html?org/apache/iceberg/catalog/Catalog.html`
+- **docs/docs/java-api-quickstart.md**: `../../javadoc/{{ icebergVersion }}/index.html?org/apache/iceberg/Tables.html`
+- **docs/docs/java-api-quickstart.md**: `configuration.md#catalog-properties`
+- **docs/docs/java-api-quickstart.md**: `../../spec.md#partitioning`
+- **docs/docs/java-api-quickstart.md**: `api.md#update-operations`
+
+## Notes
+- Check if files have been moved or renamed
+- Verify external links are still valid
+- Update relative paths as needed
