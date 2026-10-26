@@ -43,7 +43,6 @@ Tables also provide `refresh` to update the table to the latest version, and exp
 * `io` returns the `FileIO` used to read and write table files
 * `locationProvider` returns a `LocationProvider` used to create paths for data and metadata files
 
-
 ### Scanning
 
 #### File level
@@ -182,7 +181,6 @@ MapType map = MapType.ofOptional(
 ListType list = ListType.ofRequired(1, IntegerType.get());
 ```
 
-
 ## Expressions
 
 Iceberg's expressions are used to configure table scans. To create expressions, use the factory methods in [`Expressions`](../../javadoc/{{ icebergVersion }}/index.html?org/apache/iceberg/expressions/Expressions.html).
@@ -228,7 +226,6 @@ table.newScan()
     .filter(Expressions.greaterThanOrEqual("x", 5))
     .filter(Expressions.lessThan("x", 10))
 ```
-
 
 ## Modules
 

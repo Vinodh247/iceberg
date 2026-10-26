@@ -58,7 +58,7 @@ data.writeStream
     .format("iceberg")
     .outputMode("append")
     .trigger(Trigger.ProcessingTime(1, TimeUnit.MINUTES))
-    .option("path", "hdfs://nn:8020/path/to/table") 
+    .option("path", "hdfs://nn:8020/path/to/table")
     .option("checkpointLocation", checkpointPath)
     .start()
 ```
@@ -107,7 +107,7 @@ documents how to configure the interval.
 
 ### Expire old snapshots
 
-Each batch written to a table produces a new snapshot. Iceberg tracks snapshots in table metadata until they are expired. Snapshots accumulate quickly with frequent commits, so it is highly recommended that tables written by streaming queries are [regularly maintained](maintenance.md#expire-snapshots). [Snapshot expiration](spark-procedures.md#expire_snapshots) is the procedure of removing the metadata and any data files that are no longer needed. By default, the procedure will expire the snapshots older than five days. 
+Each batch written to a table produces a new snapshot. Iceberg tracks snapshots in table metadata until they are expired. Snapshots accumulate quickly with frequent commits, so it is highly recommended that tables written by streaming queries are [regularly maintained](maintenance.md#expire-snapshots). [Snapshot expiration](spark-procedures.md#expire_snapshots) is the procedure of removing the metadata and any data files that are no longer needed. By default, the procedure will expire the snapshots older than five days.
 
 ### Compacting data files
 
