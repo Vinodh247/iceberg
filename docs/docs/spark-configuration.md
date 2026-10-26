@@ -30,6 +30,7 @@ This creates an Iceberg catalog named `hive_prod` that loads tables from a Hive 
 spark.sql.catalog.hive_prod = org.apache.iceberg.spark.SparkCatalog
 spark.sql.catalog.hive_prod.type = hive
 spark.sql.catalog.hive_prod.uri = thrift://metastore-host:port
+
 # omit uri to use the same URI as Spark: hive.metastore.uris in hive-site.xml
 ```
 
@@ -51,7 +52,6 @@ spark.sql.catalog.hadoop_prod.warehouse = hdfs://nn:8020/warehouse/path
 
 !!! info
     The Hive-based catalog only loads Iceberg tables. To load non-Iceberg tables in the same Hive metastore, use a [session catalog](#replacing-the-session-catalog).
-
 
 ### Catalog configuration
 
@@ -82,7 +82,6 @@ Both catalogs are configured using properties nested under the catalog name. Com
 | spark.sql.catalog._catalog-name_.use-nullable-query-schema | `true` or `false` | Whether to preserve fields' nullability when creating the table using CTAS and RTAS. If set to `true`, all fields will be marked as nullable. If set to `false`, fields' nullability will be preserved. The default value is `true`. Available in Spark 3.5 and above.   |
 
 Additional properties can be found in common [catalog configuration](configuration.md#catalog-properties).
-
 
 ### Using catalogs
 
@@ -138,7 +137,6 @@ Iceberg 0.11.0 and later add an extension module to Spark to add new SQL command
 
 Using those SQL commands requires adding Iceberg extensions to your Spark environment using the following Spark property:
 
-
 | Spark extensions property | Iceberg extensions implementation                                   |
 |---------------------------|---------------------------------------------------------------------|
 | `spark.sql.extensions`    | `org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions` |
@@ -172,8 +170,6 @@ spark.read
 !!! warning
     streaming-max-rows-per-micro-batch should always be greater than the number of records in any data file in the table.
     The smallest unit that will be streamed is a single file, so if a data file contains more records than this limit, the stream will get stuck at this file.
-
-
 
 ### Write options
 
