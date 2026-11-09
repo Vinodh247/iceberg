@@ -99,7 +99,7 @@ CREATE CATALOG my_catalog WITH (
 Catalogs can be registered in `sql-client-defaults.yaml` before starting the SQL client.
 
 ```yaml
-catalogs: 
+catalogs:
   - name: my_catalog
     type: iceberg
     catalog-type: hadoop
@@ -175,8 +175,8 @@ To create a partition table, use `PARTITIONED BY`:
 CREATE TABLE `hive_catalog`.`default`.`sample` (
     id BIGINT COMMENT 'unique id',
     data STRING NOT NULL
-) 
-PARTITIONED BY (data) 
+)
+PARTITIONED BY (data)
 WITH ('format-version'='2');
 ```
 
@@ -196,7 +196,6 @@ CREATE TABLE  `hive_catalog`.`default`.`sample_like` LIKE `hive_catalog`.`defaul
 ```
 
 For more details, refer to the [Flink `CREATE TABLE` documentation](https://nightlies.apache.org/flink/flink-docs-release-{{ flinkVersionMajor }}/docs/dev/table/sql/create/).
-
 
 ### `ALTER TABLE`
 

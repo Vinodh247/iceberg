@@ -282,7 +282,7 @@ too early when reading multiple data files concurrently.
 Enable watermark generation for an `IcebergSource` by setting the `watermarkColumn`.
 The supported column types are `timestamp`, `timestamptz` and `long`.
 Iceberg `timestamp` or `timestamptz` inherently contains the time precision. So there is no need
-to specify the time unit. But `long` type column doesn't contain time unit information. Use  
+to specify the time unit. But `long` type column doesn't contain time unit information. Use
 `watermarkTimeUnit` to configure the conversion for long columns.
 
 The watermarks are generated based on column metrics stored for data files and emitted once per split.
@@ -329,7 +329,7 @@ DataStream<RowData> stream =
     env.fromSource(
         IcebergSource source = IcebergSource.forRowData()
             .tableLoader(tableLoader)
-            // Disable combining multiple files to a single split 
+            // Disable combining multiple files to a single split
             .set(FlinkReadOptions.SPLIT_FILE_OPEN_COST, String.valueOf(TableProperties.SPLIT_SIZE_DEFAULT))
             // Watermark using long column
             .watermarkColumn("long_column")
@@ -375,7 +375,7 @@ env.getConfig()
 ...
 ```
 
-Check out all the options here: [read-options](flink-configuration.md#read-options) 
+Check out all the options here: [read-options](flink-configuration.md#read-options)
 
 ## Inspecting tables
 
@@ -402,7 +402,6 @@ SELECT * FROM prod.db.table$history;
 
 !!! info
     **This shows a commit that was rolled back.** In this example, snapshot 296410040247533544 and 2999875608062437330 have the same parent snapshot 5179299526185056830. Snapshot 296410040247533544 was rolled back and is *not* an ancestor of the current table state.
-
 
 ### Metadata Log Entries
 
@@ -509,7 +508,6 @@ These tables are unions of the metadata tables specific to the current snapshot,
 
 !!! danger
     The "all" metadata tables may produce more than one row per data file or manifest file because metadata files may be part of more than one table snapshot.
-
 
 #### All Data Files
 

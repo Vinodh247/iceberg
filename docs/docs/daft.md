@@ -28,7 +28,7 @@ Daft DataFrames are a powerful interface to power use-cases across ML/AI trainin
 
 ## Enabling Iceberg support in Daft
 
-[PyIceberg](https://py.iceberg.apache.org/) supports reading of Iceberg tables into Daft DataFrames. 
+[PyIceberg](https://py.iceberg.apache.org/) supports reading of Iceberg tables into Daft DataFrames.
 
 To use Iceberg with Daft, ensure that the [PyIceberg](https://py.iceberg.apache.org/) library is also installed in your current Python environment.
 
@@ -105,7 +105,7 @@ df.show()
 
 ```
 ╭───────────┬─────────┬───────────────┬─────────────┬────────────────────╮
-│ vendor_id ┆ trip_id ┆ trip_distance ┆ fare_amount ┆ store_and_fwd_flag │                                                          
+│ vendor_id ┆ trip_id ┆ trip_distance ┆ fare_amount ┆ store_and_fwd_flag │
 │ ---       ┆ ---     ┆ ---           ┆ ---         ┆ ---                │
 │ Int64     ┆ Int64   ┆ Float32       ┆ Float64     ┆ Utf8               │
 ╞═══════════╪═════════╪═══════════════╪═════════════╪════════════════════╡
@@ -120,7 +120,6 @@ df.show()
 ### Type compatibility
 
 Daft and Iceberg have compatible type systems. Here are how types are converted across the two systems.
-
 
 | Iceberg | Daft |
 |---------|------|

@@ -441,7 +441,7 @@ Example json:
 
 ```json
 {
-  "key": 1, 
+  "key": 1,
   "array": [1,"two",3],
   "empty_obj": {},
   "nested_obj": {"some_key": ["one", "two"]}
@@ -451,10 +451,10 @@ Example json:
 Will become the following if `json.root` is true:
 
 ```
-SinkRecord.schema: 
+SinkRecord.schema:
   "payload" : (Optional) Map<String, String>
-  
-Sinkrecord.value (Struct): 
+
+Sinkrecord.value (Struct):
   "payload"  : Map(
     "key" : "1",
     "array" : "[1,"two",3]"
@@ -466,15 +466,15 @@ Sinkrecord.value (Struct):
 Will become the following if `json.root` is false
 
 ```
-SinkRecord.schema: 
+SinkRecord.schema:
   "key": (Optional) Int32,
   "array": (Optional) Array<String>,
   "nested_object": (Optional) Map<string, String>
-  
+
 SinkRecord.value (Struct):
- "key" 1, 
- "array" ["1", "two", "3"] 
- "nested_object" Map ("some_key" : "["one", "two"]") 
+ "key" 1,
+ "array" ["1", "two", "3"]
+ "nested_object" Map ("some_key" : "["one", "two"]")
 ```
 
 ### KafkaMetadataTransform
@@ -486,9 +486,9 @@ The `KafkaMetadata` injects `topic`, `partition`, `offset`, `timestamp` which ar
 
 | Property       | Description (default value)                                                       |
 |----------------|-----------------------------------------------------------------------------------|
-| field_name     | (_kafka_metadata) prefix for fields                                               | 
+| field_name     | (_kafka_metadata) prefix for fields                                               |
 | nested         | (false) if true, nests data on a struct else adds to top level as prefixed fields |
-| external_field | (none) appends a constant `key,value` to the metadata (e.g. cluster name)         | 
+| external_field | (none) appends a constant `key,value` to the metadata (e.g. cluster name)         |
 
 If `nested` is on:
 
