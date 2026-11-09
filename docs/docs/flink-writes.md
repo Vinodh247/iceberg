@@ -17,6 +17,7 @@ title: "Flink Writes"
  - See the License for the specific language governing permissions and
  - limitations under the License.
  -->
+
 # Flink Writes
 
 Iceberg support batch and streaming writes With [Apache Flink](https://flink.apache.org/)'s DataStream API and Table API.
@@ -77,13 +78,9 @@ Iceberg supports `UPSERT` based on the primary key when writing data into v2 tab
 !!! info
     OVERWRITE and UPSERT can't be set together. In UPSERT mode, if the table is partitioned, the partition fields should be included in equality fields.
 
-
-
-
 ## Writing with DataStream
 
 Iceberg support writing to iceberg table from different DataStream input.
-
 
 ### Appending data
 
@@ -144,7 +141,6 @@ env.execute("Test Iceberg DataStream");
 !!! info
     OVERWRITE and UPSERT can't be set together. In UPSERT mode, if the table is partitioned, the partition fields should be included in equality fields.
 
-
 ### Write with Avro GenericRecord
 
 Flink Iceberg sink provides `AvroGenericRecordToRowDataMapper` that converts
@@ -160,7 +156,6 @@ Please use non-shaded `iceberg-flink` jar instead.
 DataStream<org.apache.avro.generic.GenericRecord> dataStream = ...;
 
 Schema icebergSchema = table.schema();
-
 
 // The Avro schema converted from Iceberg schema can't be used
 // due to precision difference between how Iceberg schema (micro)
@@ -237,8 +232,6 @@ to detect failed or missing Iceberg commits.
 
 If the checkpoint interval (and expected Iceberg commit interval) is 5 minutes, set up alert with rule like `elapsedSecondsSinceLastSuccessfulCommit > 60 minutes` to detect failed or missing Iceberg commits in the past hour.
 
-
-
 ## Options
 
 ### Write options
@@ -260,7 +253,7 @@ INSERT INTO tableName /*+ OPTIONS('upsert-enabled'='true') */
 ...
 ```
 
-Check out all the options here: [write-options](flink-configuration.md#write-options) 
+Check out all the options here: [write-options](flink-configuration.md#write-options)
 
 ## Distribution mode
 
@@ -354,7 +347,7 @@ FlinkSink.forRowData(input)
 
 ### Overhead
 
-Data shuffling (hash or range) has computational overhead of serialization/deserialization 
+Data shuffling (hash or range) has computational overhead of serialization/deserialization
 and network I/O. Expect some increase of CPU utilization.
 
 Range distribution also collect and aggregate data distribution statistics.
@@ -375,7 +368,7 @@ orphan files that are old enough.
 # Flink Writes (SinkV2 based implementation)
 
 At the time when the current default, `FlinkSink` implementation was created, Flink Sink's interface had some
-limitations that were not acceptable for the Iceberg tables purpose. Due to these limitations, `FlinkSink` is based 
+limitations that were not acceptable for the Iceberg tables purpose. Due to these limitations, `FlinkSink` is based
 on a custom chain of `StreamOperator`s  terminated by `DiscardingSink`.
 
 In the 1.15 version of Flink [SinkV2 interface](https://cwiki.apache.org/confluence/display/FLINK/FLIP-191%3A+Extend+unified+Sink+interface+to+support+small+file+compaction)

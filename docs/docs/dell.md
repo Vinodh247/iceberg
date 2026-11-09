@@ -18,7 +18,6 @@ title: "Dell"
  - limitations under the License.
  -->
 
-
 # Iceberg Dell Integration
 
 ## Dell ECS Integration
@@ -79,12 +78,12 @@ The related problems of catalog usage:
 
 1. The `SparkSession.catalog` won't access the 3rd-party catalog of Spark in both Python and Scala, so please use DDL SQL to list all tables and namespaces.
 
-
 ### Flink
 
 Use the Dell ECS catalog with Flink, you first must create a Flink environment.
 
 ```bash
+
 # HADOOP_HOME is your hadoop root directory after unpack the binary package.
 export HADOOP_CLASSPATH=`$HADOOP_HOME/bin/hadoop classpath`
 
